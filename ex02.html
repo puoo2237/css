@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="ex02.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+    <!--
+    css 우선 순위
+    id(#) > class(.) > tag
+    -->
     <h3 id="h3" class="h3">우선 순위 확인</h3>
-    
+
     <hr>
 
     <div id="div1">1</div>
     <div class="class01">2</div>
     <div class="class02">3</div>
     <div id="div2" class="class03">id, class 선택자</div>
+    <!--
+    id에 공백이 있으면 문법 오류 발생
+    class에는 공백이 있어도 무방 => 두 클래스 모두 적용
+    -->
     <div id="div3 div4">선택자 여러개 설정</div>
     <div class="class03 class02">선택자 여러개 설정</div>
     <hr>
-    
+
     <h1>외부 css 설정</h1>
     <h1>배경색 지정</h1>
 </body>
+
 </html>

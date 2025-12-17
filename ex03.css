@@ -1,22 +1,86 @@
-#div6, #div7, #div8 {width: 200px; height: 200px;}
-#div6 { background-color: #ff9911;}
-#div7 {background-color: rgb(255,0,0);}
-#div8 {background-color: rgba(255,0,0,0.1);}
+#div6,
+#div7,
+#div8 {
+    width: 200px;
+    height: 200px;
+}
 
-* { margin: 0; padding: 0; color: red; }
+#div6 {
+    background-color: #ff9911;
+}
 
-#div5 h3:nth-child(2){ background-color: purple; }
-#div5 h4:nth-child(6){ background-color: peru; }
-#div5 h4:nth-of-type(3) {background-color: gold; }
+#div7 {
+    background-color: rgb(255, 0, 0);
+}
 
-#div4 ~ div {background-color: red; }
-#div4 + div {background-color: blue; }
+#div8 {
+    background-color: rgba(255, 0, 0, 0.1);
+}
 
-#div3 { width: 200px; height: 200px; background-color: green;}
-#div3 > div > h3 {color: aqua;}
+/* 
+* {}: 페이지에 있는 모든 요소에 동일한 스타일을 강제로 적용
+    - * 선택자는 우선순위 가장 낮음 
+    - class, id, 인라인 스타일이 있으면 덮어씌워짐
+*/
+* {
+    margin: 0;
+    padding: 0;
+    color: red;
+}
 
-#div2 { width: 200px; height: 200px; background-color: gold;}
-#div2 > h3 { color: green; }
+/*  
+h3:nth-child(n): n번째 자식 h3이다
+h3:nth-of-type(n): h3의 n번째
+div4 ~ div: div4 뒤에 오는 모든 div
+div4 + div: div4 뒤에 바로 오는 div
+div1 > div > h3: div1의 지속 자식 div, div의 직속 자식 h3
+*/
+#div5 h3:nth-child(2) {
+    background-color: purple;
+}
 
-#div1 { width: 200px; height: 200px; background-color: gray;}
-#div1 h3 { color: red; }
+#div5 h4:nth-child(6) {
+    background-color: peru;
+}
+
+#div5 h4:nth-of-type(3) {
+    background-color: gold;
+}
+
+#div4~div {
+    background-color: red;
+}
+
+#div4+div {
+    background-color: blue;
+}
+
+#div3 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+#div3>div>h3 {
+    color: aqua;
+}
+
+#div2 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+}
+
+#div2>h3 {
+    color: green;
+}
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+
+#div1 h3 {
+    color: red;
+}
