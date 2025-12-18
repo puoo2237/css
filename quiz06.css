@@ -1,10 +1,12 @@
 #nav {
     width: 1200px;
+    height: 200px;
     background-color: darkred;
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    
 
     & #logo {
         width: 200px;
@@ -15,44 +17,56 @@
     }
 
     & #menu {
+        list-style: none;
         display: flex;
-        flex-wrap: wrap;
         color: white;
         font-size: 30px;
-        
-        & div {
+        padding: 0px;
+
+        & li {
             margin: auto;
             margin: 0 20px;
 
-            &:hover {
-                border-bottom: 5px solid;
-                text-decoration: solid;
-                color: orange;
-                transition: all 0.25s;
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: 5px solid;
+                    text-decoration: solid;
+                    color: orange;
+                    transition: all 0.25s;
+                }
             }
         }
     }
 
     & #space {
-        width: 200px;
+        width: 120px;
     }
 
     & #info {
+        list-style: none;
         display: flex;
-        flex-wrap: wrap;
         color: gray;
         font-size: 20px;
+        padding: 0px;
 
-        & div {
+        & li {
             margin: auto;
             margin: 0 10px;
 
-            &:hover {
-                border-bottom: 5px solid;
-                text-decoration: solid;
-                color: orange;
-                transition: all 0.25s;
+            & a {
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: 5px solid;
+                    text-decoration: solid;
+                    color: orange;
+                    transition: all 0.25s;
+                }
             }
+
+
         }
     }
 }
