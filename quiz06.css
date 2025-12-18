@@ -1,0 +1,58 @@
+#nav {
+    width: 1200px;
+    background-color: darkred;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    & #logo {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-size: cover;
+        background-image: url("융프라웅.jpg");
+    }
+
+    & #menu {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 30px;
+        
+        & div {
+            margin: auto;
+            margin: 0 20px;
+
+            &:hover {
+                border-bottom: 5px solid;
+                text-decoration: solid;
+                color: orange;
+                transition: all 0.25s;
+            }
+        }
+    }
+
+    & #space {
+        width: 200px;
+    }
+
+    & #info {
+        display: flex;
+        flex-wrap: wrap;
+        color: gray;
+        font-size: 20px;
+
+        & div {
+            margin: auto;
+            margin: 0 10px;
+
+            &:hover {
+                border-bottom: 5px solid;
+                text-decoration: solid;
+                color: orange;
+                transition: all 0.25s;
+            }
+        }
+    }
+}
