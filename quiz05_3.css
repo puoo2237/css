@@ -1,43 +1,48 @@
+/* 
+    - 큰 틀의 경우 id를 주로 사용하고
+    - 세부 조정은 class를 이용해서 진행한다
+*/
+
 #wrap {
     width: 1200px;
     margin: auto;
 
 
-    &>div:nth-of-type(1) {
+    &>#header {
         height: 100px;
         background-color: red;
     }
 
-    &>div:nth-of-type(2) {
+    &>#main {
         height: 400px;
         display: flex;
 
-        &>div:nth-of-type(1) {
+        &>#side-left {
             width: 20%;
             background-color: yellow;
         }
 
-        &>div:nth-of-type(2) {
+        &>#section {
             width: 50%;
             background-color: green;
 
-            & div{
-                width: 400px;
-                height: 60px;
+            & div {
+                width: 70%;
+                height: 15%;
                 background-color: white;
                 border: 2px solid lightgreen;
                 margin: auto;
-                margin-top: 50px;
+                margin-top: 60px;
             }
         }
 
-        &>div:nth-of-type(3) {
+        &>#side-right {
             width: 30%;
             background-color: yellow;
         }
     }
 
-    &>div:nth-of-type(3) {
+    &>#footer {
         height: 100px;
         background-color: pink;
     }

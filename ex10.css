@@ -1,0 +1,52 @@
+/* 
+    justify-content
+        - center
+        - space-between: 가장자리가 딱 붙고 사이가 벌어지는 형태
+        - space-around
+        - end
+    border
+        - width, height은 border 크기를 반영하지 않은 크기이므로 border > 0 인 경우 계획했던 크기보다 늘어날 수 있음
+    flex
+        - flex-wrap: wrap 자식의 크기 보장
+        - flex-direction: 어떤 방식으로 엮을 것인가
+    line-height
+        
+*/
+#nav {
+    width: 700px;
+    background-color: antiquewhite;
+
+    &>ul {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        background-color: orange;
+        list-style: none;
+        padding: 0;
+        height: 100px;
+        align-items: center;
+        justify-content: space-around;
+
+        &>li {
+            border: 1px solid;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            /* padding: 10px; */
+        }
+
+        & a {
+            text-decoration: none;
+            color: wheat;
+
+
+            &:hover {
+                border-bottom: 3px solid olive;
+                padding-bottom: 3px;
+                color: black;
+                transition: all 0.25s;
+            }
+        }
+    }
+}
