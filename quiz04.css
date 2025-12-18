@@ -1,0 +1,39 @@
+#div1 {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid;
+
+    & div {
+        width: 216px;
+        height: 285px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        display: inline-block;
+        background-image: url("융프라웅.jpg");
+        background-size: 216px 285px;
+        background-repeat: no-repeat;
+
+        &:hover div {
+            background-color: green;
+            background-image: none;
+            color: white;
+        }
+
+        & div {
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            color: red;
+            border: 2px solid;
+            border-radius: 20px;
+            margin: 227.5px 58px 27.5px 58px;
+        }
+    }
+
+    & div:nth-child(5n) {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+
+}

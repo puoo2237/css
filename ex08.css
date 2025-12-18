@@ -1,0 +1,28 @@
+/* 
+- 배경 이미지의 크기가 틀보다 작으면 바둑판 형식으로 적용됨
+    - background-repeat: no-repeat: 반복 중지
+    - background-size () (): 화면 크기 조정
+    - background-position (상) (좌): 여백 크기 조정 
+    - background: 모든 기능을 사용할 수 있는 속성
+        - background: url("이미지") no-repeat 200px 200px / 100px 100px
+*/
+#div1{
+    width: 1200px;
+    height: 1200px;
+    border: 1px solid;
+    /* background-repeat: no-repeat;
+    background-size: 1200px 1200px;
+    background-position: 300px 200px;
+    background-image: url("다운로드.jfif"); */
+    background: url("다운로드.jfif") no-repeat 300px 200px / 1200px 1200px;
+
+    &:hover {
+        background-image: url("../html/cutydog.jpg");
+        color: red;
+    }
+
+    & div {
+        width: 50px;
+        height: 50px;
+    }
+}
