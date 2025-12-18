@@ -1,8 +1,17 @@
 /* 
     item의 총 width = 총 width - (item-1) * 여백 width
     각 item의 width = (총 width - (item-1) * 여백 width)/item 수
-*/
 
+    - margin x(상) y(우) z(하) k(좌): 상하좌우로 얼마만큼 밀어낼 것인가를 의미함
+        - 한개씩 지정
+            - margin-top
+            - maigin-right
+        - 두 개만 작성하면 (상하) (좌우)
+        - 한개만 작성하면 (상하좌우)
+            - margin: auto 화면이 확장 축소되든 가운데 정렬을 해줌 
+    - padding x(상) y(우) z(하) k(좌): 안쪽에서 얼마만큼 밀어낼 것인가를 의미함
+        - padding-top
+*/
 #div4 {
     border: 5px solid;
     width: 300px;
@@ -47,9 +56,6 @@
     display: block;
 }
 
-/* 
-margin: auto 화면이 확장 축소되든 가운데 정렬을 해줌 
-*/
 #div2 {
     width: 100px;
     height: 100px;
@@ -72,16 +78,6 @@ margin: auto 화면이 확장 축소되든 가운데 정렬을 해줌
 }
 
 
-/* 
-margin x(상) y(우) z(하) k(좌): 상하좌우로 얼마만큼 밀어낼 것인가를 의미함
-    - 한개씩 지정
-        - margin-top
-        - maigin-right
-    - 두 개만 작성하면 (상하) 좌우)
-    - 한개만 작성하면 (상하좌우)
-padding x(상) y(우) z(하) k(좌): 안쪽에서 얼마만큼 밀어낼 것인가를 의미함
-    - padding-top
-*/
 #div1 {
     background-color: lightgray;
     width: 300px;
