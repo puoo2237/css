@@ -1,7 +1,15 @@
-#div1 {
+/* 
+    - margin
+        - margin: auto 화면 정중앙에 위치하도록 
+    - span
+        - 위치, 정렬 등 조정 불가능
+            - display: block or lnline-block을 하면 조정 가능
+*/
+#wrap {
     width: 1200px;
     height: 600px;
-    border: 1px solid;
+    /* border: 1px solid; */
+    margin: auto; 
 
     & div {
         width: 216px;
@@ -10,23 +18,28 @@
         margin-bottom: 30px;
         display: inline-block;
         background-image: url("융프라웅.jpg");
-        background-size: 216px 285px;
+        background-size: cover;
         background-repeat: no-repeat;
 
-        &:hover div {
+        &:hover span {
             background-color: green;
             background-image: none;
             color: white;
+            opacity: 1;
+            transition: all 0.3s;
         }
 
-        & div {
+        & span {
             width: 100px;
             height: 30px;
             text-align: center;
             color: red;
-            border: 2px solid;
+            border: 3px solid darkgray;
             border-radius: 20px;
+            display: block;
             margin: 227.5px 58px 27.5px 58px;
+            opacity: 0.5;
+            transition: all 0.3s;
         }
     }
 
