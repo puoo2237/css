@@ -9,7 +9,8 @@
     flex
         - flex-wrap: wrap 자식의 크기 보장
         - flex-direction: 어떤 방식으로 엮을 것인가
-    line-height
+    ul
+        - 기본적으로 들여쓰기(패딩 효과)가 되어있음
         
 */
 #nav {
