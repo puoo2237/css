@@ -1,0 +1,39 @@
+#div1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    overflow: hidden;
+
+    &:hover~#div2 {
+        margin-top: 0px;
+
+        & span {
+            color: navy;
+            transition: 5s;
+        }
+    }
+
+    & img {
+        width: 200px;
+        height: 200px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(2) rotate(360deg);
+            transition: 2s;
+
+        }
+    }
+}
+
+
+#div2 {
+    margin-top: -130px;
+    margin-left: 30px;
+
+    & span {
+        color: white;
+        font-size: 50px;
+
+    }
+}
