@@ -1,0 +1,45 @@
+#nav {
+    width: 400px;
+    background-color: gold;
+}
+
+#menu {
+    background-color: green;
+
+    & li:hover .menu1 {
+        height: 120px;
+    }
+}
+
+.menu1 {
+    background-color: skyblue;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+li {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    transition: 1s;
+
+    &:hover {
+        width: 300px;
+        background-color: red;
+        transition-delay: 1s;
+    }
+}
