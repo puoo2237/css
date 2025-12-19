@@ -26,7 +26,6 @@
     border-radius: 10px;
 
     & .title {
-        background-color: bisque;
         text-align: center;
         letter-spacing: 10px;
         font-size: 25px;
@@ -38,7 +37,6 @@
     }
 
     &>form {
-        background-color: aquamarine;
         width: 270px;
         margin: auto;
 
@@ -66,7 +64,6 @@
             font-size: 15px;
             font-weight: bold;
             cursor: pointer;
-            background-color: lightgray;
 
             &:hover{
                 background-color: gray;
