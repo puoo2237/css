@@ -1,0 +1,103 @@
+a {
+    top: 120px;
+    position: absolute;
+    z-index: 10;
+
+    &:hover~#login {
+        display: block;
+    }
+
+}
+
+#static,
+#relative,
+#absolute,
+#fixed {
+    width: 100px;
+    height: 100px;
+}
+
+#static {
+    background-color: red;
+}
+
+#relative {
+    background-color: gray;
+    position: relative;
+    top: -75px;
+    left: 25px;
+    z-index: 2;
+}
+
+#absolute {
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+
+#fixed {
+    background-color: yellow;
+    position: fixed;
+    top: 75px;
+    left: 75px;
+    z-index: 1;
+}
+
+#login {
+    display: none;
+    width: 360px;
+    height: 230px;
+    box-shadow: 0 0 8px lightgray;
+    border-radius: 10px;
+    margin: auto;
+
+
+    & .title {
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 25px;
+        border-bottom: 3px dotted olive;
+        width: 220px;
+        margin: auto;
+        padding: 10px 0;
+        color: darkcyan;
+    }
+
+    &>form {
+        width: 270px;
+        margin: auto;
+
+        &>input {
+            color: gray;
+            font-size: 20px;
+            margin-top: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid lightgray;
+            letter-spacing: 3px;
+            width: 100%;
+
+            &:focus {
+                border-bottom: 2px solid red;
+            }
+        }
+
+        &>button {
+            margin-top: 20px;
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: gray;
+                box-shadow: 0 0 2px black;
+            }
+        }
+    }
+}
