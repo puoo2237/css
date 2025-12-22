@@ -1,0 +1,167 @@
+/* 
+    animation: 지정이름, 지속시간
+    - 해당 애니메이션을 만드는 시간 10s 중 20%, 애니메이션 작동시간 80%
+        - 0%: 효과가 모두 적용된 상태에서 시작
+    animation-delay: 시작 지연
+    animation-fill-mode: forwards 애니메이션 마지막 위치 유지
+*/
+h1{
+    position: relative;
+    opacity: 1;
+}
+#left{
+    left: -150px;
+    animation: left 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes left{
+    100%{
+        left: 300px;
+        opacity: 1;
+    }
+}
+#right{
+    right: -500px;
+    animation: right 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes right{
+    100%{
+        right: -200px;
+        opacity: 1;
+    }
+}
+
+#wrap {
+    width: 100px;
+    margin: 200px auto;
+    background-color: bisque;
+
+    & :nth-of-type(2){
+        animation-delay: 0.1s;
+    }
+    & :nth-of-type(3){
+        animation-delay: 0.2s;
+    }
+    & :nth-of-type(4){
+        animation-delay: 0.3s;
+    }
+}
+
+.block {
+    width: 50px;
+    height: 8px;
+    margin-bottom: 15px;
+    background-color: navy;
+    animation: block 1s infinite;
+}
+@keyframes block{
+    50%{
+        transform: translateX(50px);
+    }
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+
+    & :nth-of-type(2) {
+        animation-delay: 0.2s;
+    }
+
+    & :nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    background-color: navy;
+    border-radius: 20px;
+    margin: 0 10px;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    50% {
+        transform: scale(0);
+    }
+}
+
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: abc 10s;
+}
+
+@keyframes abc {
+    20% {
+        margin-left: 400px;
+    }
+}
+
+#div2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: aaa 10s;
+}
+
+@keyframes aaa {
+    0% {
+        margin-left: 400px;
+        background-color: green;
+    }
+}
+
+#div3 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: bbb 5s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes bbb {
+    50% {
+        margin-left: 400px;
+        background-color: green;
+    }
+}
+
+#div4 {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    animation: box 4s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes box {
+    25% {
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
+    50% {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    75% {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    100% {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
