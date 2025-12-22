@@ -24,7 +24,7 @@
     background-image: url("융프라웅.jpg");
     background-size: cover;
 
-    &>div {
+    >div {
         color: white;
         margin-top: 25px;
         text-align: center;
@@ -52,7 +52,7 @@
     width: 600px;
     background-color: brown;
 
-    & ul {
+    ul {
         list-style: none;
         display: flex;
         align-items: center;
@@ -62,10 +62,10 @@
             color: lightgray;
         }
 
-        & li {
+        li {
             margin: 0 10px;
 
-            & a {
+            a {
                 text-decoration: none;
                 color: white;
                 font-size: 20px;
@@ -94,7 +94,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    &>div {
+    >div {
         width: 152.5px;
         height: 200px;
         border: 1px solid gray;
@@ -154,12 +154,12 @@
 #section_2 {
     margin-top: 20px;
 
-    & ul {
+    ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
 
-        & a {
+        a {
             text-decoration: none;
             color: chocolate;
 
@@ -169,7 +169,7 @@
                 padding-bottom: 4px;
             }
         }
-        & li{
+        li{
             width: 140px;
             height: 140px;
             border: 1px solid;
