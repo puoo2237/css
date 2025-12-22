@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header_wrap {
+    width: 100%;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+}
+
+#header {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#title_logo {
+    width: 100px;
+    border-radius: 100px;
+    background-image: url("융프라웅.jpg");
+    background-size: cover;
+
+    &>div {
+        color: white;
+        margin-top: 25px;
+        text-align: center;
+        animation: title 0.8s infinite;
+    }
+}
+
+@keyframes title {
+    25% {
+        color: bisque;
+    }
+
+    50% {
+        color: antiquewhite;
+    }
+
+    75% {
+        color: beige;
+    }
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    background-color: brown;
+
+    & ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        &:nth-of-type(2) a {
+            font-size: 13px;
+            color: lightgray;
+        }
+
+        & li {
+            margin: 0 10px;
+
+            & a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+
+                &:hover {
+                    color: orange;
+                    border-bottom: 2px solid orange;
+                    padding-bottom: 5px;
+                    transition: 0.25s;
+                }
+            }
+        }
+    }
+}
+
+#main {
+    width: 700px;
+    margin: 100px auto;
+    /* border: 1px solid; */
+}
+
+/* 
+여백: 30px, 이미지 4개
+*/
+#section_1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>div {
+        width: 152.5px;
+        height: 200px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+
+        &:nth-of-type(1) .img {
+            width: 130px;
+            height: 150px;
+            background-image: url("융프라웅.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+    }
+}
+
+#srr {
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    opacity: 0;
+    animation: srr 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes srr {
+    25% {
+        color: aqua;
+        opacity: 0.25;
+    }
+
+    50% {
+        color: plum;
+        opacity: 0.5;
+    }
+
+    75% {
+        color: lime;
+        opacity: 0.75;
+    }
+
+    100% {
+        color: lime;
+        opacity: 0.2;
+        left: 50%
+    }
+}
+
+#section_2 {
+    margin-top: 20px;
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        & a {
+            text-decoration: none;
+            color: chocolate;
+
+            &:hover {
+                color: black;
+                border-bottom: 2px dotted;
+                padding-bottom: 4px;
+            }
+        }
+        & li{
+            width: 140px;
+            height: 140px;
+            border: 1px solid;
+            background-image: url("융프라웅.jpg");
+            background-size: cover;
+
+            &:hover{
+                background-color: lightblue;
+                background-image: url();
+                .list{display: block;}
+            }
+        }
+    }
+}
+
+.list{
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+}
